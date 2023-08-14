@@ -1,5 +1,5 @@
 # Dinosaurgame
-![rock-paper-scissors](https://github.com/javadashtiani/Rock-Paper-Scissors/assets/134012615/926010bf-3473-49fa-a04a-7938d9754a9f)
+![dgame](https://github.com/javadashtiani/Dinosaurgame/assets/134012615/e5139f08-082e-435e-b000-8898ed661447)
 - 🔗 https://javadashtiani.github.io/Dinosaurgame/#
 - 💻 Developed by Javad Ashtiani
 - 📆 Created - 2023
