@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dinosaur Game</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <div class="hint-box">
+      <h2>Every click have 5 score.</h2>
+      <h2>This is a infinite game until you meet the block.</h2>
+      <h2>I hope enjoy the game ...</h2>
+    </div>
+    <div id="score-box" class="score-box">Score :</div>
+    <div class="boxes">
+      <div class="road"></div>
+      <div id="item" class="item">
+        <img src="images/standing_still.png" alt="" />
+      </div>
+      <div id="box" class="box">
+        <img src="images/cactus_1.png" alt="cactus" />
+      </div>
+      <div class="result-box result-box-hidden">
+        <div class="show-score">Your Score :</div>
+        <h2>Game Over</h2>
+        <a id="try-again" href="#">Try again</a>
+      </div>
+    </div>
+   <script src="main.js"></script>
+  </body>
+</html>

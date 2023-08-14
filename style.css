@@ -1,0 +1,192 @@
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        font-family: monospace;
+        overflow: hidden;
+      }
+      .hint-box {
+        width: 400px;
+        height: 200px;
+        background-color: #a7f3d0;
+        position: fixed;
+        top: 40px;
+        right: 50px;
+        border-radius: 6px;
+        padding: 20px;
+      }
+      .hint-box > h2:nth-of-type(1) {
+        margin-bottom: 15px;
+      }
+      .hint-box > h2:nth-of-type(2) {
+        line-height: 1.5;
+      }
+      .hint-box > h2:nth-of-type(3) {
+        margin-top: 20px;
+      }
+    
+   
+
+      #start-game-btn {
+        text-decoration: none;
+        display: inline-block;
+        background-color: green;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      #score-box {
+        position: fixed;
+        top: 50px;
+        left: 70px;
+        font-size: 40px;
+        font-weight: 700;
+      }
+      .boxes {
+        width: 100%;
+        height: 200px;
+        border-top: 1px solid #6b7280;
+        border-bottom: 1px solid #6b7280;
+        margin: auto;
+        padding: 0 10px;
+        position: relative;
+        top: 60%;
+      }
+      .road {
+        width: 500%;
+        height: 140px;
+        background: url("images/ground.png");
+        background-repeat: repeat-x;
+        position: absolute;
+        top: 85%;
+        left: 0;
+        animation: moveRoad linear infinite 5s;
+      }
+      @keyframes moveRoad {
+        100% {
+          transform: translate(-2950px);
+        }
+      }
+      .boxes > .item {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 150px;
+        background-color: transparent;
+      }
+      @keyframes itemMove {
+        0% {
+          transform: translateY(1px);
+        }
+        50%{
+          transform: translateY(2px);
+        }
+        100%{
+          transform: translateY(-1px);
+        }
+      }
+      .boxes > .item > img {
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .boxes > .box {
+        width: 40px;
+        height: 80px;
+        position: relative;
+        top: 110px;
+        left: 40px;
+        animation: boxmove 1s linear infinite;
+      }
+      .boxes > .box > img {
+        width: 60%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .fade-up {
+        transform: translateY(-1000%);
+      }
+      .result-box {
+        width: 600px;
+        height: 400px;
+        background-color: #ef4444;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+      }
+      .result-box > .show-score {
+        font-size: 16px;
+        margin-bottom: 10px;
+        background-color: #fdba74;
+        color: black;
+        border-radius: 4px;
+        padding: 10px 25px;
+      }
+      .result-box > h2 {
+        font-size: 40px;
+        font-weight: 700;
+        margin: 40px 0;
+      }
+      .result-box > a {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #fff;
+        color: red;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 40px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        transition: 0.4s;
+        border-radius: 8px;
+      }
+      .result-box > a:hover {
+        background-color: #c2c0c0;
+      }
+      .result-box-hidden {
+        opacity: 0;
+        visibility: visible;
+      }
+      @keyframes boxmove {
+        0% {
+          left: 500px;
+        }
+        100% {
+          left: -20px;
+        }
+      }
+      .animation-jump {
+        animation: jumpup 0.3s linear;
+      }
+      @keyframes jumpup {
+        0% {
+          top: 150px;
+        }
+        30% {
+          top: 100px;
+        }
+        70% {
+          top: 100px;
+        }
+        100% {
+          top: 150px;
+        }
+      }
+     
